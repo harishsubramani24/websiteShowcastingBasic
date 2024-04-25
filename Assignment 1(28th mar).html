@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Topics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFE0;
+        }
+
+        header {
+            
+            /* Add styles for your logo and navigation menu */
+        }
+
+        main {
+            /* Add styles for your main content */
+        }
+
+        .card-container {
+            /* Style the container for your topic cards */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            /* Style the individual topic cards */
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px lightblue;
+            overflow: hidden;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px orange;
+        }
+
+        .card-content {
+            /* Add styles for the content within your cards */
+            padding: 10px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+           <a  class="navbar-brand" href="#">Technology We Learn this week</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#"> Technology! </a>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Reach us!</a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+  
+    <main>
+        <section id="intro">
+            <!-- Introduction to the topics -->
+        </section>
+        <section id="topics">
+            <!-- Container for the topics cards -->
+            <div class="card-container">
+                <div class="card" data-topic="
+                !DOCTYPE html ( Head,Meta,title,link,)
+                Anchor tag
+                HTML heading
+                 ">
+                    <div class="card-content">
+                        <img src="HTML5.png" alt="HTML Image">
+                        <h1> HTML</h1>
+                        <p>Information about HTML </p>
+                    </div>
+                </div>
+                <div class="card" data-topic="
+                Css Tags
+                CSS comments
+                CSS outline
+                CSS padding
+                ">
+                    <div class="card-content">
+                        <img src="css1.png" alt="HTML Image">
+                        <h2>CSS </h2>
+                        <p>Information about CSS </p>
+                    </div>
+                </div>
+                <div class="card" data-topic="
+                String
+                Number
+                Boolean
+                Undefined
+                Null
+                Symbol
+                Js Events 
+                Promises 
+                Object">
+                    <div class="card-content">
+                        <img src="JavaScript-logo.png" alt="HTML Image">
+                        <h3>JavaScript </h3>
+                        <p>Information about JavaScript </p>
+                    </div>
+                    
+                </div>
+                <div class="card" data-topic="
+                Carousel
+                Components
+                Navbar 
+                 ">
+                    <div class="card-content">
+                        <img src="bootstrap.png" alt="HTML Image">
+                        <h4> Bootstrap </h4>
+                        <p>Information about Bootstrap</p>
+                    </div>
+                    
+                </div>
+
+                <div class="card" data-topic="
+                React state
+                Virtual DOM
+                React Hooks
+                React props 
+
+                 ">
+                    <div class="card-content">
+                        <img src="React.webp" alt="HTML Image">
+                        <h5>ReactJs </h5>
+                        <p>Information about ReactJs </p>
+                    </div>
+                    
+                </div>
+
+                <div class="card" data-topic="
+                Using jQuery
+                ">
+                    <div class="card-content">
+                        <img src="jquery-1-logo.png" alt="HTML Image">
+                        <h6> JQuery </h6>
+                        <p>Information about JQuery </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer information -->
+    </footer>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach((card) => {
+            card.addEventListener('click', () => {
+                // Replace this with your custom routing logic
+                // For this example, I'm just adding an alert
+                alert(`Navigating to topic: ${card.dataset.topic}`);
+            });
+        });
+    </script>
+</body>
+</html>
